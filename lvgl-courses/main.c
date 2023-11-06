@@ -11,7 +11,7 @@
 #include <unistd.h>
 
 #include "lvgl/lvgl.h"
-//#include "lv_demos/src/lv_demo_widgets/lv_demo_widgets.h"
+#include "lv_demos/src/lv_demo_widgets/lv_demo_widgets.h"
 //#include "lv_demos/src/lv_demo_benchmark/lv_demo_benchmark.h"
 //#include "lv_demos/src/lv_demo_stress/lv_demo_stress.h"
 #include "lv_demos/src/lv_demo_music/lv_demo_music.h"
@@ -57,10 +57,10 @@ int APIENTRY WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR szCmdLi
     LV_LOG_USER("LVGL initialization completed!");
 
     /*Run the demo*/
-//    lv_demo_widgets();
+    lv_demo_widgets();
     //lv_demo_benchmark();
 //    lv_demo_stress();
-    lv_demo_music();
+//    lv_demo_music();
 
     while(!lv_win32_quit_signal) {
         /* Periodically call the lv_task handler.
